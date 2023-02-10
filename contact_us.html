@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="img_gallery.html">Image Gallery</a></li>
-                <li><a href="event_calander.html">Event Calander</a></li>
+                <li><a href="event_calandar.html">Event Calandar</a></li>
                 <li><a href="current_members.html">Current Members</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
@@ -20,9 +20,34 @@
 
         <main>
             <div>
-                <h3>Welcome to the Star Wars Society!</h3>
-                
-                <p>The Star Wars Society is RGU's unofficial Star Wars society. We talk about the battles, the politics as well as argue over which era is the best (it's the prequels).</p>
+                <h3>Contact Us</h3>
+            </div>
+
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Contact Us using the below form.</legend>
+
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value=""/> <br/>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" value=""/> <br/>
+                        
+                        <p>Membership Status: 
+                            <label for="membership">Member </label>
+                            <input type="radio" id="member" name="membership" value="Member"/>
+                            <label for="membership">Non-Member </label>
+                            <input type="radio" id="non-member" name="membership" value="Non-Member"/><br/>
+                        </p>
+
+                        <label for="comments">Comments:</label>
+                        <input type="text" name="comments" value=""/> <br/>
+
+                        <label for="file">Attack a file: </label>
+                        <input type="file" name="file"/>
+                    </fieldset>
+                </form>
             </div>
         </main>
 

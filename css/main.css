@@ -1,0 +1,82 @@
+/*
+ * Main website bits
+ */
+
+
+header{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+p,h1,h2,h3,h4,h5,h6{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
+h1{
+    font-size: x-large;
+}
+h3{
+    font-size: large;
+}
+p{
+    font-size: medium;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+}
+aside{
+    background-color: white;
+    border-radius: 10px;
+}
+footer{
+    background-color: white;   
+}
+
+/*
+ * Interactive UI
+ */
+
+nav li{
+    border:2px;
+    background-color: white;
+    list-style-type: none;
+}
+
+nav li a{
+    color:black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color: grey;
+}
+
+.active{
+    background-color: yellow;
+}
+
+/*
+ * Table
+ */
+
+ table{
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+ }
+ table td, table th{
+    border: 2px;
+    border-color: #F0F0F0;
+    border-style: solid;
+ }
+ table tr:nth-child(even){
+    background-color: #F2F2F2;
+ }
+ table tr:hover{
+    background-color: white;
+ }
+ table th{
+    background-color: white;
+    color:black;
+ }

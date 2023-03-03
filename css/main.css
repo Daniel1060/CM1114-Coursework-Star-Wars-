@@ -1,16 +1,31 @@
 /*
+ * Constant Values
+ */
+:root{
+    --mainTextColor: black;
+    --secondaryTextColor:white;
+    --readingBackgroundColor:white;
+    --selectionColor: black;
+    --backgroundColor: grey;
+    --accentColor:DarkGreen;
+    --interactiveFeatureColor: DarkGreen;
+    --mainColor: Green;
+}
+
+/*
  * Main website bits
  */
 
 
 header{
-    background-color: white;
+    background-color: var(--readingBackgroundColor);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding:10px;
 }
 p,h1,h2,h3,h4,h5,h6{
     font-family: 'Courier New', Courier, monospace;
-    color:black;
+    color:var(--mainTextColor);
 }
 h1{
     font-size: x-large;
@@ -21,40 +36,59 @@ h3{
 p{
     font-size: medium;
 }
+body{
+    width:90%;
+}
 main{
-    background-color: white;
+    background-color: var(--readingBackgroundColor);
     border-radius: 10px;
 }
 aside{
-    background-color: white;
+    background-color: var(--readingBackgroundColor);
     border-radius: 10px;
 }
 footer{
-    background-color: white;   
+    background-color: var(--mainColor);   
 }
 
 /*
  * Interactive UI
  */
 
+ nav{
+    margin-top: 15px;
+    width:100%;
+ }
+
 nav li{
     border:2px;
-    background-color: white;
+    background-color: var(--accentColor);
     list-style-type: none;
+    border:2px;
+    border-color: var(--backgroundColor);
+    list-style: none;
+    float:left;
+    width: 15%;
+    padding:16px;
 }
-
+nav ul{
+    margin: 0px;
+    padding:0px;
+    overflow: hidden;
+}
 nav li a{
-    color:black;
+    color:var(--secondaryTextColor);
     text-align: center;
+    text-decoration: none;
     text-decoration: none;
 }
 
 nav li:hover{
-    background-color: grey;
+    background-color: var(--selectionColor);
 }
 
 .active{
-    background-color: yellow;
+    background-color: var(--interactiveFeatureColor);
 }
 
 /*
@@ -74,9 +108,24 @@ nav li:hover{
     background-color: #F2F2F2;
  }
  table tr:hover{
-    background-color: white;
+    background-color: var(--backgroundColor);
  }
  table th{
-    background-color: white;
-    color:black;
+    background-color: var(--mainColor);
+    color:white;
+ }
+
+
+ /*
+ * Header
+ */
+
+ #logo{
+    float:left;
+    height: 75px;
+    width: 75px;
+    margin-right: 10px;
+ }
+ #title{
+    display:inline;
  }

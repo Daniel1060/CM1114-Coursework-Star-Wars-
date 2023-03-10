@@ -1,0 +1,143 @@
+/*
+ * Constant Values
+ */
+:root{
+    --mainTextColor: black;
+    --secondaryTextColor:white;
+    --readingBackgroundColor:white;
+    --selectionColor: black;
+    --backgroundColor: grey;
+    --accentColor:DarkGreen;
+    --interactiveFeatureColor: DarkGreen;
+    --mainColor: Green;
+}
+
+/*
+ * Main website bits
+ */
+
+
+header{
+    background-color: var(--readingBackgroundColor);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding:10px;
+}
+p,h1,h2,h3,h4,h5,h6{
+    font-family: 'Courier New', Courier, monospace;
+    color:var(--mainTextColor);
+}
+h1{
+    font-size: x-large;
+}
+h3{
+    font-size: large;
+}
+p{
+    font-size: medium;
+}
+body{
+    width:90%;
+}
+main{
+    background-color: var(--readingBackgroundColor);
+    border-radius: 10px;
+}
+aside{
+    background-color: var(--readingBackgroundColor);
+    border-radius: 10px;
+}
+footer{
+    background-color: var(--mainColor);   
+}
+
+/*
+ * Interactive UI
+ */
+
+ nav{
+    margin-top: 15px;
+    width:100%;
+ }
+
+nav li{
+    border:2px;
+    background-color: var(--accentColor);
+    list-style-type: none;
+    border:2px;
+    border-color: var(--backgroundColor);
+    list-style: none;
+    float:left;
+    width: 15%;
+    padding:16px;
+}
+nav ul{
+    margin: 0px;
+    padding:0px;
+    overflow: hidden;
+}
+nav li a{
+    color:var(--secondaryTextColor);
+    text-align: center;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color: var(--selectionColor);
+}
+
+.active{
+    background-color: var(--interactiveFeatureColor);
+}
+
+/*
+ * Table
+ */
+
+ table{
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+ }
+ table td, table th{
+    border: 2px;
+    border-color: #F0F0F0;
+    border-style: solid;
+ }
+ table tr:nth-child(even){
+    background-color: #F2F2F2;
+ }
+ table tr:hover{
+    background-color: var(--backgroundColor);
+ }
+ table th{
+    background-color: var(--mainColor);
+    color:white;
+ }
+
+
+ /*
+ * Header
+ */
+
+ #logo{
+    float:left;
+    height: 75px;
+    width: 75px;
+    margin-right: 10px;
+ }
+ #title{
+    display:inline;
+ }
+
+  /*
+ * F-Layout for Contact US
+ */
+ #contact_us{
+    float: left;
+    margin:20px;
+ }
+ #twitter{
+    width:80%;
+    margin:20px;
+ }

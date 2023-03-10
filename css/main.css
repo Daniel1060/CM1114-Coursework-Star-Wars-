@@ -19,9 +19,25 @@
 
 header{
     background-color: var(--readingBackgroundColor);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding:10px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding:1em;
+    margin: 1em;
+}
+nav{
+    padding: 1em;
+    margin:1em;
+}
+
+main{
+    margin:1em;
+}
+
+aside{
+    margin:1em;
+}
+footer{
+    margin:1em;
 }
 p,h1,h2,h3,h4,h5,h6{
     font-family: 'Courier New', Courier, monospace;
@@ -37,15 +53,15 @@ p{
     font-size: medium;
 }
 body{
-    width:90%;
+    width:95%;
 }
 main{
     background-color: var(--readingBackgroundColor);
-    border-radius: 10px;
+    border-radius: 1em;
 }
 aside{
     background-color: var(--readingBackgroundColor);
-    border-radius: 10px;
+    border-radius: 1em;
 }
 footer{
     background-color: var(--mainColor);   
@@ -56,8 +72,9 @@ footer{
  */
 
  nav{
-    margin-top: 15px;
+    margin-top: 1.5em;
     width:100%;
+    background-color: var(--backgroundColor);
  }
 
 nav li{
@@ -140,4 +157,44 @@ nav li:hover{
  #twitter{
     width:80%;
     margin:20px;
+ }
+
+ /*
+ * Carousel
+ */
+
+ #home-carousel{
+    padding:2em;
+    background-color: var(--backgroundColor);
+ }
+
+ .carousel-item{    
+    background-color: var(--backgroundColor);
+    align-content: center;
+    align-items: center;
+    height: 500px;
+ }
+
+ .carousel-item >img{
+    min-width: 80%;
+    height: 100%;
+    align-content: center;
+    object-fit: fill;
+ }
+
+  /*
+ * image gallery
+ */
+.gallery-img{
+    width:100%;
+    size: 50%;
+}
+ #img-gallery{
+    padding-top: 10px;
+ }
+
+ #img-gallery .row{
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
  }

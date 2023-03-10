@@ -129,3 +129,15 @@ nav li:hover{
  #title{
     display:inline;
  }
+
+  /*
+ * F-Layout for Contact US
+ */
+ #contact_us{
+    float: left;
+    margin:20px;
+ }
+ #twitter{
+    width:80%;
+    margin:20px;
+ }

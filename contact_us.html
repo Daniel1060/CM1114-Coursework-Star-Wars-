@@ -2,6 +2,7 @@
     <head>
         <title>Star Wars Society</title>
         <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/script.js"></script>
     </head>
 
     <body>
@@ -16,6 +17,15 @@
                 <li><a href="current_members.html">Current Members</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
+            <form>
+                <fieldset>
+                    
+                    <input type="email" name="loginEmail" value="email"/>
+
+                    <input type="password" name="loginPassword" value="password"/>
+                </fieldset>
+            </form>
+            <button type="button" onclick=login()>Login</button>
         </nav>
 
         <main id="contact_us">
@@ -23,7 +33,7 @@
                 <h3>Contact Us</h3>
             </div>
 
-            <div>
+            <div id="left_col">
                 <form>
                     <fieldset>
                         <legend>Contact Us using the below form.</legend>
@@ -48,6 +58,9 @@
                         <input type="file" name="file"/>
                     </fieldset>
                 </form>
+                <button type="button" onclick=submitForm()>Submit</button>
+                <p id="form_outcome">
+                </p>
             </div>
         </main>
 

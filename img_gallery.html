@@ -2,6 +2,7 @@
     <head>
         <title>Star Wars Society</title>
         <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/script.js"></script>
     </head>
 
     <body>
@@ -31,21 +32,21 @@
                     Image Gallery
                 </h4>
 
-                <div id="img-galery" class="container">
+                <div id="img-gallery " class="container">
                     <div class="row">
                         <div class="col-sm">
-                            <img src="images\Star_Wars_logo_black.png" class="gallery-img"/>
+                            <img src="images\Star_Wars_logo_black.png" class="gallery-img" id="img-gallery1" onmouseover=highlight(this.id) onmouseleave=delight(this.id) />
                         </div>
                         <div class="col-sm">
-                            <img src="images\star-wars-the-bad-batch-logo_0900957875.jpg" class="gallery-img"/>
+                            <img src="images\star-wars-the-bad-batch-logo_0900957875.jpg" class="gallery-img" id="img-gallery2" onmouseover=highlight(this.id) onmouseleave=delight(this.id) />
                         </div>
                         <div class="col-sm">
-                            <img src="images\star-wars-rebels-logo.jpg" class="gallery-img"/> 
+                            <img src="images\star-wars-rebels-logo.jpg" class="gallery-img" id="img-gallery3" onmouseover=highlight(this.id) onmouseleave=delight(this.id) /> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <img src="images\e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" class="gallery-img"/>
+                            <img src="images\e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" class="gallery-img" id="img-gallery4  " onmouseover=highlight(this.id) onmouseleave=delight(this.id) />
                         </div>
                         <div class="col-sm">
 
@@ -63,4 +64,16 @@
 
         <footer></footer>
     </body>
+
+    <script>
+        function highlight(id) {
+            document.getElementById(id).style="border: solid blue 2px;"
+            //alert("Mouseover");
+        }
+        function delight(id) {
+            document.getElementById(id).style="border: none;"
+            //alert("Mouseout")
+        }
+
+    </script>
 </html>

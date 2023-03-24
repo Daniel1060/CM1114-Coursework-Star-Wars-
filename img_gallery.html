@@ -1,16 +1,45 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+  <!--Header-->
     <head>
+        <meta charset="utf-8" lang="en">
         <title>Star Wars Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="css/main.css">
         <script src="scripts/script.js"></script>
+
+        <!--Scripting ELements-->
+        <script>
+
+            //Highlight Image when moused over
+            function highlight(id) {
+                document.getElementById(id).style="border: solid blue 2px;"
+                //alert("Mouseover");
+            }
+
+            //Un hihglight Image when mouse is no longer over it
+            function delight(id) {
+                document.getElementById(id).style="border: none;"
+                //alert("Mouseout")
+            }
+        </script>
+
     </head>
 
+    <!--Body-->
     <body>
+
+        <!--Header-->
         <header>
-            <img id="logo" src="images\Emblem_of_the_First_Galactic_Empire.svg"/>
+            <!--Display Logo and Site Title-->
+            <img id="logo" src="images/Emblem_of_the_First_Galactic_Empire.svg" alt="Empire Logo">
             <h1 id="page_title">Star Wars Society</h1>
         </header>
 
+        <!--Navigation Bar with buttons to site pages-->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,59 +50,48 @@
             </ul>
         </nav>
 
+        <!--Main Body of page-->
         <main>
+            <!--Page Heading and Description-->
+            
             <div>
-                <h3>Welcome to the Star Wars Society!</h3>
-                
-                <p>The Star Wars Society is RGU's unofficial Star Wars society. We talk about the battles, the politics as well as argue over which era is the best (it's the prequels).</p>
-            </div>
-            <div>
-                <h4>
+                <!--Page Heading-->
+                <h3>
                     Image Gallery
-                </h4>
-
-                <div id="img-gallery " class="container">
+                </h3>
+                <!--Gallery of images-->
+                <div id="img-gallery" class="container">
                     <div class="row">
                         <div class="col-sm">
-                            <img src="images\Star_Wars_logo_black.png" class="gallery-img" id="img-gallery1" onmouseover=highlight(this.id) onmouseleave=delight(this.id) />
+                            <img src="images/Star_Wars_logo_black.png" alt="Star Wars Logo" class="gallery-img" id="img-gallery1" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
                         </div>
                         <div class="col-sm">
-                            <img src="images\star-wars-the-bad-batch-logo_0900957875.jpg" class="gallery-img" id="img-gallery2" onmouseover=highlight(this.id) onmouseleave=delight(this.id) />
+                            <img src="images/star-wars-the-bad-batch-logo_0900957875.jpg" alt="The Bad Batch Logo" class="gallery-img" id="img-gallery2" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
                         </div>
                         <div class="col-sm">
-                            <img src="images\star-wars-rebels-logo.jpg" class="gallery-img" id="img-gallery3" onmouseover=highlight(this.id) onmouseleave=delight(this.id) /> 
+                            <img src="images/star-wars-rebels-logo.jpg" alt="Star Wars: Rebels Logo" class="gallery-img" id="img-gallery3" onmouseover=highlight(this.id) onmouseleave=delight(this.id)> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <img src="images\e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" class="gallery-img" id="img-gallery4  " onmouseover=highlight(this.id) onmouseleave=delight(this.id) />
+                            <img src="images/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" alt="Star Wars: The Clone Wars Logo" class="gallery-img" id="img-gallery4" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
                         </div>
                         <div class="col-sm">
-
                         </div>
                         <div class="col-sm">
-                            
                         </div>
-                    </div>
-                  </div>      
+                    </div>                      
                 </div>
             </div>
         </main>
 
+        <!--Aside Content-->
         <aside></aside>
 
+        <!--Footer Content-->
         <footer></footer>
     </body>
 
-    <script>
-        function highlight(id) {
-            document.getElementById(id).style="border: solid blue 2px;"
-            //alert("Mouseover");
-        }
-        function delight(id) {
-            document.getElementById(id).style="border: none;"
-            //alert("Mouseout")
-        }
 
-    </script>
+    
 </html>

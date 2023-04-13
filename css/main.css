@@ -120,6 +120,7 @@ nav li:hover{
     border: 2px;
     border-color: #F0F0F0;
     border-style: solid;
+    padding: 0.5em;
  }
  table tr:nth-child(even){
     background-color: #F2F2F2;
@@ -130,6 +131,12 @@ nav li:hover{
  table th{
     background-color: var(--mainColor);
     color:white;
+    text-align: center;
+    vertical-align:middle;  
+ }
+
+ table td{
+    font-size: 10pt;
  }
 
 

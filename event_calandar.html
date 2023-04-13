@@ -42,8 +42,18 @@
 
                 <!--Time Table of events-->
                 <table>
+                    
                     <tr>
-                        <td></td>   <th>Monday</th>     <th>Tuesday</th>                            <th>Wednesday</th>      <th>Thursday</th>                           <th>Friday</th>     <th>Saturday</th>                           <th>Sunday</th>
+                        <td></td>
+                        <td></td>
+                        <th colspan="7">Day</th>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>   <th>Monday</th>     <th>Tuesday</th>                            <th>Wednesday</th>      <th>Thursday</th>                           <th>Friday</th>     <th>Saturday</th>                           <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="14" style="text-align: center;">Week <br>No</th>
+                        
                     </tr>
                     <tr>
                         <th>W1</th> <td></td>           <td>Clone Wars @ Somewhere</td>             <td></td>               <td>Clone Wars @ Somewhere</td>             <td></td>           <td>Clone Wars @ Somewhere</td>             <td></td>
@@ -58,7 +68,7 @@
                         <th>W4</th> <td></td>           <td>The Phantom Menace @ Somewhere</td>     <td></td>               <td>Attack of The Clones @ Somewhere</td>   <td></td>           <td>The Bad Batch @ Somewhere</td>          <td></td>
                     </tr>
                     <tr>
-                        <th>W5</th> <td></td>           <td>Revenge of the Sith @ Somewhere</td>    <td></td>               <td>A New Hope @ Somewhere</td>             <td></td>           <td>The Bad Batch @ Somewhere</td>          <td></td>
+                    <th>W5</th> <td></td>               <td>Revenge of the Sith @ Somewhere</td>    <td></td>               <td>A New Hope @ Somewhere</td>             <td></td>           <td>The Bad Batch @ Somewhere</td>          <td></td>
                     </tr>
                     <tr>
                         <th>W6</th> <td></td>           <td>The Empire Strikes Back @ Somewhere</td><td></td>               <td>Revenge of the Sith @ Somewhere</td>    <td></td>           <td>The Bad Batch @ Somewhere</td>          <td></td>
@@ -67,22 +77,38 @@
                         <th>W7</th> <td></td>           <td>Rogue One @ Somewhere</td>              <td></td>               <td>Rebels @ Somewhere</td>                 <td></td>           <td>Rebels @ Somewhere</td>                 <td></td>
                     </tr>
                     <tr>
-                        <th>W8</th> <td></td>           <td>Rebels @ Somewhere</td>                 <td></td>               <td>Rebels @ Somewhere</td>                 <td></td>           <td>Rebels @ Somewhere</td>                 <td></td>
+                        <th>W8</th> <td></td>          <td>Rebels @ Somewhere</td>                 <td></td>               <td>Rebels @ Somewhere</td>                 <td></td>           <td>Rebels @ Somewhere</td>                 <td></td>
                     </tr>
                     <tr>
                         <th>W9</th> <td></td>           <td>Rebels @ Somewhere</td>                 <td></td>               <td>Rebels @ Somewhere</td>                 <td></td>           <td>Rebels @ Somewhere</td>                 <td></td>
                     </tr>
                     <tr>
-                        <th>W10</th> <td>On Break</td>           
+                        <th>W10</th> <td colspan="7" style="text-align: center;">On Break</td>
                     </tr>
                     <tr>
-                        <th>W11</th> <td>On Break</td>           
+                        <th>W11</th> <td colspan="7" style="text-align: center;">On Break</td>           
                     </tr>
                     <tr>
                         <th>W12</th> <td></td>          <td>Rebels @ Somewhere</td>                 <td></td>               <td>Rebels @ Somewhere</td>                 <td></td>           <td>Rebels @ Somewhere</td>                 <td></td>
                     </tr>
                 </table>
             </div>
+
+            <p>Want to recommend an event? Tell us below!</p>
+            <form name="event" id="events">
+                <fieldset>
+                    <legend>Recommend an event</legend>
+
+                    <!--Title Input-->
+                    <label for="event_title">Event Title:</label>
+                    <input type="text" id="event_title" name="event_title" value=""/> <br/>
+
+                    <!--Date Input-->
+                    <label for="event_date">Date:</label>
+                    <input type="date" id="event_date" name="event_date" value=""/> <br/>
+                </fieldset>
+            </form>
+            <button type="button" onclick=submit_event()>Submit</button>
         </main>
 
         <!--Aside Content-->

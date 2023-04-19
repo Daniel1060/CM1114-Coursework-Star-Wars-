@@ -49,3 +49,12 @@ function submit_event(){
 
 
 
+
+function playGonk(){
+    var audio = new Audio("sounds/justanothergenericsfx.ogg");
+    //alert("Playing Gonk")
+    audio.play();
+    //alert("Gonk Played")
+}
+
+

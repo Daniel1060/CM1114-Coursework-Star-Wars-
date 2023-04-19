@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!--
+Threat Source: External
+Threat Agent: Human 
+Threat Intention: Intentional / Malicious
+Threat Motivation: Unauthorized advertisement / Defacement
+Threat Impact: Loss of reputation, loss of stored images, possible sharing of unauthorized images
+Threat Mitigation: Restrict access to website backend to trusted individuals only, ensure passwords meet security standards and are changed on a regular basis, email alert when changes are made
+-->
+
 
 <html lang="en">
   <!--Header-->
@@ -43,11 +52,14 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="img_gallery.html">Image Gallery</a></li>
+                <li><a class="active" href="img_gallery.html">Image Gallery</a></li>
                 <li><a href="event_calandar.html">Event Calandar</a></li>
                 <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="new_shows.html">New Shows</a></li>
+                <li><a href="gonk.html">Gonk</a></li>
+                <li><a href="tragedy.html">The Tragedy</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
+              </ul>
         </nav>
 
         <!--Main Body of page-->
@@ -56,11 +68,12 @@
             
             <div>
                 <!--Page Heading-->
-                <h3>
+                <h1>
                     Image Gallery
-                </h3>
+                </h1>
                 <!--Gallery of images-->
                 <div id="img-gallery" class="container">
+
                     <div class="row">
                         <div class="col-sm">
                             <img src="images/Star_Wars_logo_black.png" alt="Star Wars Logo" class="gallery-img" id="img-gallery1" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
@@ -72,15 +85,45 @@
                             <img src="images/star-wars-rebels-logo.jpg" alt="Star Wars: Rebels Logo" class="gallery-img" id="img-gallery3" onmouseover=highlight(this.id) onmouseleave=delight(this.id)> 
                         </div>
                     </div>
+
+
                     <div class="row">
                         <div class="col-sm">
                             <img src="images/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" alt="Star Wars: The Clone Wars Logo" class="gallery-img" id="img-gallery4" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
                         </div>
                         <div class="col-sm">
+                            <img src="images/Star-Wars-Jedi-Fallen-Order.jpg" alt="Star Wars: Fallen Order Logo" class="gallery-img" id="img-gallery5" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
                         </div>
                         <div class="col-sm">
+                            <img src="images/star-wars-just-retconned-ahsokas-backstory-in-tales-of-the-jedi.webp" alt="Star Wars: Fallen Order" class="gallery-img" id="img-gallery6" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
                         </div>
-                    </div>                      
+                    </div>    
+
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="images/Emblem_of_the_First_Galactic_Empire.svg" alt="Imperial Logo" class="gallery-img" id="img-gallery7" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
+                        </div>
+                        <div class="col-sm">
+                            <img src="images/IVUwJVf.jpg" alt="Star Destroyer" class="gallery-img" id="img-gallery8" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
+                        </div>
+                        <div class="col-sm">
+                            <img src="images/battlefront_2.jpg" alt="battlefront 2" class="gallery-img" id="img-gallery9" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="images/ddl8guq-424c9291-2e20-494a-8e15-505b8fbfde95.png" alt="Gonk Droid" class="gallery-img" id="img-gallery10" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
+                        </div>
+                        <div class="col-sm">
+                            <img src="images/Star Wars 1.png" alt="New Battlefront 2" class="gallery-img" id="img-gallery11" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
+                        </div>
+                        <div class="col-sm">
+                            <img src="images/Star-Wars-Wallpapers-3.jpg" alt="Force Unleashed" class="gallery-img" id="img-gallery12" onmouseover=highlight(this.id) onmouseleave=delight(this.id)>
+                        </div>
+                    </div>                  
                 </div>
             </div>
         </main>
@@ -89,7 +132,7 @@
         <aside></aside>
 
         <!--Footer Content-->
-        <footer></footer>
+        <footer>Daniel O'Hara &#169 2023</footer>
     </body>
 
 

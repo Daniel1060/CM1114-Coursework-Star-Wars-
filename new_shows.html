@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <!--Header-->
+    <head>
+        <meta charset="utf-8" lang="en">
+        <title>Star Wars Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/script.js"></script>
+    </head>
+  <!--Body-->
+    <body>
+
+      <!--Header-->
+        <header>
+            <!--Display Logo and Site Title-->
+            <img id="logo" src="images/Emblem_of_the_First_Galactic_Empire.svg" alt="Empire Logo">
+            <h1 id="page_title">Star Wars Society</h1>
+        </header>
+
+        <!--Navigation Bar with buttons to site pages-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Image Gallery</a></li>
+            <li><a href="event_calandar.html">Event Calandar</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a class="active" href="new_shows.html">New Shows</a></li>
+            <li><a href="gonk.html">Gonk</a></li>
+            <li><a href="tragedy.html">The Tragedy</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!--Main Body of page-->
+        <main>
+          <!--Page Heading and Description-->
+          <div>
+            <h1>Upcoming Shows</h1>
+
+            <!-- Container with each row containing an Iframe with a trailer to a show as well as a button to tweet a related hashtag-->
+            <div class="container">
+              <div class="row">
+
+                <!-- Each row will be seperated with a dark/light theme to help distinction-->
+                <div class="shows dark">
+                <h2>Ahsoka</h2>
+                  <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HnzNZ0Mdx4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></br>
+                    <a href="https://twitter.com/intent/tweet?button_hashtag=Ahsoka&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #Ahsoka</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+                </div>
+
+                
+                  <div class="shows light">
+                  <h2>Tales of The Jedi</h2>
+                    <div>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-uRRKqQbmw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></br>
+                      <a href="https://twitter.com/intent/tweet?button_hashtag=TalesOfTheJedi&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #Ahsoka</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+            
+
+        </main>
+        <!--Aside Content-->
+        <aside>
+        </aside>
+
+        <!--Footer Content-->
+        <footer>Daniel O'Hara &#169 2023</footer>
+    </body>
+</html>

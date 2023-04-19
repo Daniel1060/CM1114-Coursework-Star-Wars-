@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<!--
+      Threat Source: External
+      Threat Agent: Human
+      Threat Intention: Intentional / Malicious
+      Threat Motivation: Theft of user data
+      Threat Impact: Disclosure of user information. reputational loss, possible identity theft, possible fine.
+      Threat Mitigation: Ensure that user inputs are santised to prevent SQL injections, Encrypt and store log-in information seperately. Limit user's access
+    -->
+
+
+
 
 <html lang="en">
   <!--Header-->
@@ -23,20 +34,23 @@
 
         <!--Navigation Bar with buttons to site pages-->
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="img_gallery.html">Image Gallery</a></li>
-                <li><a href="event_calandar.html">Event Calandar</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Image Gallery</a></li>
+            <li><a href="event_calandar.html">Event Calandar</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="new_shows.html">New Shows</a></li>
+            <li><a href="gonk.html">Gonk</a></li>
+            <li><a href="tragedy.html">The Tragedy</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
         </nav>
 
         <!--Main Body of page-->
         <main>
           <!--Page Heading and Description-->
           <div>
-            <h3>Welcome to the Star Wars Society!</h3>
+            <h1>Welcome to the Star Wars Society!</h1>
             <p>The Star Wars Society is RGU's unofficial Star Wars society. We talk about the battles, the politics as well as argue over which era is the best (it's the prequels).</p>
           </div>
 
@@ -68,24 +82,26 @@
         </main>
         <!--Aside Content-->
         <aside>
+
+          <!-- News content-->
           <h2>News</h2>
           <div>
             <div class="row">
-              <div class="col-sm-3">
-                <p>image</p>
+              <div class="col-sm-1">
+                <img src="images/img_424427.png" width="100%" height="100%" alt="Rebelw Alliance Logo" class="news-img">
               </div>
-              <div class="col-sm-9">
-                <h3>Headline!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae.</p>
+              <div class="col-sm-11">
+                <h3>Society Election date postponed until further notice!!</h3>
+                <p>Due to multiple reasons, elections will be postponed until further notice due to multiple reasons!</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-3">
-                <p>image</p>
+              <div class="col-sm-1">
+                <img src="images/img_424427.png" width="100%" height="100%" alt="Rebelw Alliance Logo" class="news-img">
               </div>
-              <div class="col-sm-9">
-                <h3>Headline!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae.</p>
+              <div class="col-sm-11">
+                <h3>Spoilers!</h3>
+                <p>Please be aware that spoiling any new content may result in sanctions. Please be sure to maintain awareness when discussing shows and movies!</p>
               </div>
             </div>
           </div>
@@ -94,4 +110,7 @@
         <!--Footer Content-->
         <footer>Daniel O'Hara &#169 2023</footer>
     </body>
+
+    
+
 </html>

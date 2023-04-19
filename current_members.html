@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+Threat Source: External
+Threat Agent: Human 
+Threat Intention: Intentional / Malicious
+Threat Motivation: Unauthorized advertisement / Defacement
+Threat Impact: Loss of reputation, changing of member images, possibly could lead to fraud
+Threat Mitigation: 
+-->
 
 <html lang="en">
   <!--Header-->
@@ -28,7 +36,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="img_gallery.html">Image Gallery</a></li>
                 <li><a href="event_calandar.html">Event Calandar</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
+                <li><a class="active" href="current_members.html">Current Members</a></li>
+                <li><a href="new_shows.html">New Shows</a></li>
+                <li><a href="gonk.html">Gonk</a></li>
+                <li><a href="tragedy.html">The Tragedy</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -38,9 +49,48 @@
 
             <!--Page Heading and Content-->
             <div>
-                <h3>Welcome to the Star Wars Society!</h3>
+                <h1>Current Members</h1>
                 
-                <p>The Star Wars Society is RGU's unofficial Star Wars society. We talk about the battles, the politics as well as argue over which era is the best (it's the prequels).</p>
+                <!-- 
+                    Container showing Position, image and name of members (Generic Images used)
+                    Rows also denote hierachy, the higher the more power they would have
+                -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h5>Emperor</h5>
+                            <img src="images/f44fd3bad9e05c0685bee7b5a5158744.jpg" alt="Star Wars Emperor Icon" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                            <h5>Daniel</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <h5>Vader</h5>
+                            <img src="images/Darth Vader_Silhouette.jfif" alt="Darth Vader Icon" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                            <h5>Anakin Skywalker</h5>
+                        </div>
+                    </div>
+
+                    <div class="row" style="align-content: center;">
+                        <div class="col-sm">
+                            <h5>Trooper</h5>
+                            <img src="images/storm-trooper-silhouette-24.png" alt="Storm Trooper Icon" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                            <h5>TK-5929</h5>
+                        </div>
+                        <div class="col-sm">
+                            <h5>Trooper</h5>
+                            <img src="images/storm-trooper-silhouette-24.png" alt="Storm Trooper Icon" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                            <h5>TK-2315</h5>
+                        </div>
+                        <div class="col-sm">
+                            <h5>Trooper</h5>
+                            <img src="images/storm-trooper-silhouette-24.png" alt="Storm Trooper Icon" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                            <h5>TK-9147</h5>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
 
@@ -48,6 +98,6 @@
         <aside></aside>
 
         <!--Footer Content-->
-        <footer></footer>
+        <footer>Daniel O'Hara &#169 2023</footer>
     </body>
 </html>
